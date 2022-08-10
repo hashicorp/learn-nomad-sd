@@ -1,7 +1,7 @@
 variable "datacenters" {
   description = "A list of datacenters in the region which are eligible for task placement."
   type        = list(string)
-  default     = ["dc1","dc2"]
+  default     = ["dc1"]
 }
 
 variable "region" {
@@ -176,7 +176,7 @@ EOH
         data        = <<EOH
 {{ range nomadService "public-api" }}
 NEXT_PUBLIC_PUBLIC_API_URL="http://{{ .Address }}:{{ .Port }}"
-NEXT_PUBLIC_FOOTER_FLAG="http://{{ .Address }}:{{ .Port }}"
+NEXT_PUBLIC_FOOTER_FLAG="{{ env "NOMAD_ALLOC_NAME" }}"
 {{ end }}
 PORT="{{ env "NOMAD_PORT_frontend" }}"
 EOH
