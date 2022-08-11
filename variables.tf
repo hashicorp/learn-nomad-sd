@@ -2,8 +2,8 @@ variable "name" {
   description = "Used to name various infrastructure components"
 }
 
-variable "whitelist_ip" {
-  description = "IP to whitelist for the security groups (set 0.0.0.0/0 for world)"
+variable "allowlist_ip" {
+  description = "IP to allow access for the security groups (set 0.0.0.0/0 for world)"
 }
 
 variable "region" {

@@ -10,5 +10,5 @@ module "nomad-cluster" {
   region                    = var.region
   server_count              = var.server_count
   server_instance_type      = var.server_instance_type
-  whitelist_ip              = var.whitelist_ip
+  allowlist_ip              = var.allowlist_ip
 }
