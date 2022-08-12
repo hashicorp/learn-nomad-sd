@@ -1,0 +1,7 @@
+name                      = "nomad"
+key_name                  = "us-east-1-ssh-key"
+region                    = "us-east-1"
+ami                       = "ami-012345678901234567"
+whitelist_ip              = "0.0.0.0/0"
+nomad_consul_token_id     = "123e4567-e89b-12d3-a456-426614174000"
+nomad_consul_token_secret = "123e4567-e89b-12d3-a456-426614174000"
