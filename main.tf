@@ -1,5 +1,5 @@
 module "nomad-cluster" {
-  source                    = "github.com/hashicorp/learn-nomad-cluster-setup"
+  source                    = "github.com/hashicorp/learn-nomad-cluster-setup/aws"
   ami                       = var.ami
   client_count              = var.client_count
   client_instance_type      = var.client_instance_type
