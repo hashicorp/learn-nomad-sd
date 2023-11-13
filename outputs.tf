@@ -1,3 +1,6 @@
+# Copyright (c) HashiCorp, Inc.
+# SPDX-License-Identifier: MPL-2.0
+
 output "lb_address_consul_nomad" {
   value = module.nomad-cluster.lb_address_consul_nomad
 }

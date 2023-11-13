@@ -1,3 +1,6 @@
+# Copyright (c) HashiCorp, Inc.
+# SPDX-License-Identifier: MPL-2.0
+
 module "nomad-cluster" {
   source                    = "github.com/hashicorp/learn-nomad-cluster-setup/aws"
   ami                       = var.ami
